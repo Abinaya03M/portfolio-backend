@@ -65,6 +65,10 @@ CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ["*"]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.vercel.app",
+    "https://portfolio-frontend.vercel.app",
+]
 
 
 
