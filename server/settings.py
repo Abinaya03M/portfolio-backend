@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_0t4+#@lll+)v36zvtrqr-cou4p)hh1ul%zsp5vdv3qux6hwg_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -55,14 +55,10 @@ MIDDLEWARE = [
 ]
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_CREDENTIALS = True
 
 
-ALLOWED_HOSTS = ["*"]
+
+
 
 
 
@@ -146,10 +142,10 @@ EMAIL_HOST_PASSWORD = 'aleehptktiniquxp'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-
+ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
-
+CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://portfolio-frontend-smoky-nine.vercel.app",
