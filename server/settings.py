@@ -150,3 +150,12 @@ EMAIL_HOST_USER = 'abiabinaya03m@gmail.com'
 EMAIL_HOST_PASSWORD = 'aleehptktiniquxp'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://portfolio-frontend-smoky-nine.vercel.app",
+]
