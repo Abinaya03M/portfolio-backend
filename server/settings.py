@@ -133,11 +133,14 @@ EMAIL_HOST_PASSWORD = 'aleehptktiniquxp'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-ALLOWED_HOSTS = ["*"]
+CORS_ALLOW_ALL_ORIGINS = False
 
-
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://portfolio-frontend-smoky-nine.vercel.app",
+]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://portfolio-frontend-smoky-nine.vercel.app",
 ]
+
+ALLOWED_HOSTS = ["*"]
