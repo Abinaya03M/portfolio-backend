@@ -46,18 +46,18 @@ class ContactView(APIView):
         if serializer.is_valid():
             data = serializer.validated_data
 
-            send_mail(
-                subject="New Portfolio Contact",
-                message=f"""
-Name: {data['name']}
-Email: {data['email']}
+#             send_mail(
+#                 subject="New Portfolio Contact",
+#                 message=f"""
+# Name: {data['name']}
+# Email: {data['email']}
 
-Message:
-{data['message']}
-""",
-                from_email=settings.EMAIL_HOST_USER,
-                recipient_list=[settings.EMAIL_HOST_USER],
-            )
+# Message:
+# {data['message']}
+# """,
+#                 from_email=settings.EMAIL_HOST_USER,
+#                 recipient_list=[settings.EMAIL_HOST_USER],
+#             )
 
             return Response({"success": True}, status=status.HTTP_200_OK)
 
